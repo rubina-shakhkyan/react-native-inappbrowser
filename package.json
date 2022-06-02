@@ -1,17 +1,18 @@
 {
   "name": "react-native-inappbrowser-reborn",
-  "version": "3.7.0",
+  "version": "3.7.0-picnic.1",
   "description": "InAppBrowser for React Native",
   "main": "index.js",
   "scripts": {
     "flow": "flow check",
     "lint": "eslint index.js",
-    "postinstall": "opencollective-postinstall || true"
+    "postinstall": "opencollective-postinstall || true",
+    "release": "release-it"
   },
   "typings": "./index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git@github.com:proyecto26/react-native-inappbrowser.git"
+    "url": "git@github.com:rubina-shakhkyan/react-native-inappbrowser.git"
   },
   "bugs": {
     "url": "https://github.com/proyecto26/react-native-inappbrowser/issues"
@@ -47,6 +48,8 @@
   },
   "devDependencies": {
     "@react-native-community/eslint-config": "2.0.0",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@release-it/conventional-changelog": "^1.1.0",
     "babel-core": "^6.26.3",
     "eslint": "^7.11.0",
     "flow-bin": "^0.135.0",
