@@ -141,13 +141,6 @@ public class RNInAppBrowser {
       final ReadableMap animations = options.getMap(KEY_ANIMATIONS);
       applyAnimation(context, builder, animations);
     }
-    if (options.hasKey(KEY_HAS_BACK_BUTTON) &&
-        options.getBoolean(KEY_HAS_BACK_BUTTON)) {
-      builder.setCloseButtonIcon(BitmapFactory.decodeResource(
-        context.getResources(),
-        isLightTheme ? R.drawable.ic_arrow_back_black : R.drawable.ic_arrow_back_white
-      ));
-    }
 
     CustomTabsIntent customTabsIntent = builder.build();
     Intent intent = customTabsIntent.intent;
