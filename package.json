@@ -12,7 +12,7 @@
   "typings": "./index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git@github.com:rubina-shakhkyan/react-native-inappbrowser.git"
+    "url": "git@github.com:proyecto26/react-native-inappbrowser.git"
   },
   "bugs": {
     "url": "https://github.com/proyecto26/react-native-inappbrowser/issues"
