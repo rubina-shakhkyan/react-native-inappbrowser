@@ -1,6 +1,6 @@
 {
-  "name": "react-native-inappbrowser-reborn",
-  "version": "3.7.1",
+  "name": "react-native-inapp-browser-reborn",
+  "version": "1.0.0",
   "description": "InAppBrowser for React Native",
   "main": "index.js",
   "scripts": {
