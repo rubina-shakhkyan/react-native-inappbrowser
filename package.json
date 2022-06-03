@@ -1,5 +1,5 @@
 {
-  "name": "@picnicsupermarket/react-native-inapp-browser-reborn",
+  "name": "react-native-inapp-browser-reborn",
   "version": "1.0.1",
   "description": "InAppBrowser for React Native",
   "main": "index.js",
