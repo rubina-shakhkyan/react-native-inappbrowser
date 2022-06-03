@@ -1,6 +1,6 @@
 {
-  "name": "react-native-inappbrowser-reborn",
-  "version": "3.7.0-picnic.2",
+  "name": "@picnicsupermarket/react-native-inappbrowser-reborn",
+  "version": "3.7.1-picnic.0",
   "description": "InAppBrowser for React Native",
   "main": "index.js",
   "scripts": {
@@ -38,6 +38,9 @@
   ],
   "author": "Juan David Nicholls Cardona",
   "homepage": "https://github.com/proyecto26/react-native-inappbrowser",
+  "publishConfig": {
+    "registry": "https://nexus.global.picnicinternational.com/repository/npm-releases"
+  },
   "license": "MIT",
   "peerDependencies": {
     "react-native": ">=0.56"
