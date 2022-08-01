@@ -247,8 +247,6 @@ RCT_EXPORT_METHOD(open:(NSDictionary *)options
 {
   __weak typeof(self) weakSelf = self;
   [self performSynchronouslyOnMainThread:^{
-      UIViewController *ctrl = RCTPresentedViewController();
-      [ctrl dismissViewControllerAnimated:animated completion:^{
         __strong typeof(self) strongSelf = weakSelf;
         if (strongSelf && redirectResolve) {
           redirectResolve(@{
@@ -256,7 +254,6 @@ RCT_EXPORT_METHOD(open:(NSDictionary *)options
           });
           [strongSelf flowDidFinish];
         }
-      }];
   }];
 }
 
@@ -296,10 +293,6 @@ RCT_EXPORT_METHOD(isAvailable:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromi
  * Helper that is used in open and openAuth
  */
 - (BOOL)initializeWebBrowserWithResolver:(RCTPromiseResolveBlock)resolve andRejecter:(RCTPromiseRejectBlock)reject {
-  if (redirectResolve) {
-    reject(RNInAppBrowserErrorCode, @"Another InAppBrowser is already being presented.", nil);
-    return NO;
-  }
   redirectReject = reject;
   redirectResolve = resolve;
 
